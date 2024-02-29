@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #87CEEB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#principal {
+    margin: auto;
+    margin-top: 30px;
+    width: 600px;
+    height: 600px;
+    background-color: yellow;
+    border-radius: 30px;
+    border-style: solid;
+    position: relative; 
+}
+
+#caja1, #caja2, #caja3 {
+    position: absolute;
+    background-color: white;
+    border-radius: 100px;
+    padding-top: 20px;
+}
+
+#caja1 {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 250px; 
+}
+
+#caja2 {
+    width: 120px;
+    height: 120px;
+    top: 100px;
+    left: 240px; 
+}
+
+#caja3 {
+    width: 150px;
+    height: 150px;
+    top: 220px;
+    left: 225px; 
+}
+
+#caja4, #caja5 {
+    position: absolute; 
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 30px;
+}
+
+#caja4 {
+    left: 15px; 
+}
+
+#caja5 {
+    left: 60px; 
+}
+#caja6 {
+    position: absolute;
+    width: 30px; 
+    height: 30px; 
+    background-color: orange; 
+    top: 60px; 
+    left: 35px; 
+    border-radius: 50%; 
+}
+
+#caja2::before, #caja2::after {
+    content: '';
+    position: absolute;
+    width: 60px; 
+    height: 8px; 
+    background-color: black;
+}
+#caja2::before {
+    top: 60px; 
+    left: -40px; 
+    transform: rotate(-30deg); 
+}
+
+#caja2::after {
+    top: 60px; 
+    left: 100px; 
+    transform: rotate(30deg); 
+}
